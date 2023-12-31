@@ -1,0 +1,174 @@
+body
+{
+ overflow-x: hidden;
+}
+.Nav_bar
+{
+  position:absolute;
+}
+.banner{
+    height: 100vh;
+    display: flex;
+    background-color: #2d403a;
+    align-items: center;
+    width:100%;
+    justify-content:space-around;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to {   width: 60% }
+}
+
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.banner-h2
+{
+  color:white;
+  font-family: 'montserrat';
+  width: fit-content;
+  font-size: 40px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 2px solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 1px; /* Adjust as needed */
+  padding-bottom: 20px;
+  animation:
+    typing 3.5s steps(20, end),
+    blink-caret .75s step-end infinite;
+}
+.work h2, .contact h2, .skills h2,  .Certificates h2
+{
+  text-align:center;
+  padding: 0px 0px 30px 0px;
+  font-family: 'montserrat';
+  font-size: 35px;
+}
+
+.work, .Certificates
+{
+  background-color:#f2f3fe;
+  padding:50px;
+}
+.skills
+{
+  background-color:#2d403a;
+  padding:50px;
+  }
+.project_Title, .Certificate_Title
+{
+  font-family: 'montserrat';
+  font-size: 22px;
+  text-transform: Uppercase;
+}
+.contact h2, .skills h2, .skills p
+{
+  color:white;
+}
+.contact_info p, .contact_info a, .skills p
+{
+ font-family: 'poppins';
+ font-size: 16px;
+ text-align:center;
+ letter-spacing:1px;
+}
+.contact_info p, .contact_info a
+{
+ color:white;
+}
+.contact
+{
+   background-color:#000006;
+   padding:50px;
+}
+.description
+{
+ font-family: 'poppins';
+ font-size: 16px;
+ text-align:left;
+ word-spacing:1px;
+}
+
+
+.banner-cld p
+{
+  font-family: 'poppins';
+  font-size: 16px;
+  color:white;
+  align:center;
+}
+.nav
+{
+  justify-content: inherit;
+}
+.nav ul
+{
+  gap:50px;
+}
+
+.navbar-nav a
+{
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight:900px;
+  text-transform:uppercase;
+  color:black;
+}
+
+.banner-cld .about_child img{
+   width:250px;
+   height: 250px;
+   border: 1px solid white;
+   border-radius:50%;
+}
+.social_icons
+{
+ text-align:center;
+}
+.social_icons img
+{
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0px 5px 0px 5px;
+}
+
+
+
+.social_icons img:hover
+{
+  background-color: black;
+}
+
+.max-width
+{
+padding:50px;
+}
+
+.projects, .Certificates
+{
+ display:flex;
+ justify-content: center;
+ flex-wrap:wrap;
+ gap: 25px;
+}
+
+.card
+{
+   width:30%;
+   z-index:10;
+}
+.card-img
+{
+    width:100%;
+    height:200px;
+}
